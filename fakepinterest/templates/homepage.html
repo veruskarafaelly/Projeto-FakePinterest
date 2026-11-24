@@ -13,6 +13,14 @@
 <h1>FakePinterest - Meu primeiro site no ar</h1>
 
 <h2> Agora vamos continuar nosso site</h2>
+
+<form method="POST">
+{{formlogin.hidden_tag()}}
+{{formlogin.email.label}} {{formlogin.email()}}<br>
+{{formlogin.senha.label}} {{formlogin.senha()}}<br>
+{{formlogin.lembrar.label}} {{formlogin.lembrar()}}<br>
+{{formlogin.submit()}}
+</form>
 </body>
 {% endblock %}
 </html>
